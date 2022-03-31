@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <script src="script.js"></script>
+
+    
+</head>
+<body>  
+          <div class="main-container">
+            <div class="calc-container">
+                <div id="display" class="">
+                    <p id="output">0</p>
+                </div>
+                <div id='buttons-container'>
+                    <div class="btn btn-operator " onclick="hapus()">C</div>
+                    <div class="btn btn-operator " onclick="masukan('%')">%</div>
+                    <div class="btn btn-operator " onclick="masukan('/')">/</div>
+                    <div class="btn btn-operator " onclick="masukan('*')">x</div>
+    
+                    <div class="btn btn-num" onclick="masukan('7')">7</div>
+                    <div class="btn btn-num" onclick="masukan('8')">8</div>
+                    <div class="btn btn-num" onclick="masukan('9')">9</div>
+                    <div class="btn btn-operator " onclick="masukan('-')">-</div>
+    
+                    <div class="btn btn-num" onclick="masukan('4')">4</div>
+                    <div class="btn btn-num" onclick="masukan('5')">5</div>
+                    <div class="btn btn-num" onclick="masukan('6')">6</div>
+                    <div class="btn btn-operator " onclick="masukan('+')">+</div>
+    
+                    <div class="btn btn-num" onclick="masukan('1')">1</div>
+                    <div class="btn btn-num" onclick="masukan('2')">2</div>
+                    <div class="btn btn-num" onclick="masukan('3')">3</div>
+                    <div class="btn btn-operator equal " onclick="solve()">=</div>
+                    <div class="btn btn-num dot" onclick="masukan('0')">0</div>
+                    <div class="btn btn-num" onclick="masukan('.')">.</div>
+    
+                </div>
+            </div>
+        </div>
+     
+</body>
+</html>
