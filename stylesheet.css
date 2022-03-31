@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+* , html, body, p {
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-top: 10%;
+}
+ 
+
+/* Grid */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* height: 100vh; */
+}
+ 
+
+.calc-container {
+    display: grid;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.dot {
+    grid-column: span 2;
+}
+
+.equal {
+    grid-row: span 2;
+}
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    text-align: center;
+    
+}
+
+/* Input */
+#display {
+    width: 100%;
+    padding-right: 10px;
+    font-size: 3em;
+    text-align: right;
+    height: 2em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #FDFEFE;
+    background-color: #694E4E;
+    transition: all 0.3s ease-in
+}
+
+/* Btn's */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    border: 0.3px solid rgba(251, 253, 255, 0.171);
+    
+}
+
+.btn-num {
+    background-color: #694E4E;
+    color: #C1A3A3;
+}
+
+.btn-num:hover {
+    background-color: #E3B7A0;
+}
+
+.btn-operator {
+ 
+    background-color: #C1A3A3;
+    color:#733C3C;
+}
+
+.btn-operator:hover {
+    background-color: #9D5353 !important
+}
+ 
+.equal{
+    background-color: #886F6F;
+}
